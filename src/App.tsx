@@ -3,6 +3,7 @@ import  TodoFilter  from "./components/01-basic-render/TodoFilter"
 import { Greeting } from "./components/02-props/Greeting";
 import { UserCard } from "./components/02-props/UserCard"
 import { AuthStatus } from "./components/03-conditional/AuthStatus";
+import { UserStatus } from "./components/03-conditional/UserStatus";
 
 function App() {
   const currentUser = {
@@ -19,6 +20,8 @@ function App() {
       <hr />
 
       <AuthStatus isLoggedIn={true} userName="modi putin"/>
+      <hr />
+      <UserStatus  name="putin" isOnline ={true} isPremium={true} />
     </div>
   )
 }
